@@ -4,9 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
         <link rel="stylesheet" href="./assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet"> 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>
@@ -14,14 +19,155 @@
         </title>
     </head>
     <body>
-        <header>
+        <a href="#top"><button id="topButton">Top</button></a>
+        <header id="top">
             <ul>
-                <li class="nameList"><a class="active" id="name" href="">Nathaniel Geckle</a></li>
-                <li class="list"><a href="">Contact</a></li>
-                <li class="list"><a href="">Portfolio</a></li>
-                <li class="list"><a href="">About</a></li>
+                <li class="nameList"><a class="active" id="name" href="#">Nathaniel Geckle</a></li>
+                <li class="list"><a href="#contact">Contact</a></li>
+                <li class="list"><a href="#gallery">Projects</a></li>
+                <li class="list"><a href="#about">About</a></li>
             </ul>
         </header>
-        
+        <div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="./assets/images/trumpetseniorpic.jpg"></div>
+            </div>
+            <div class="section black" id="about">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col m5">
+                            <img src="./assets/images/profile.jpg" class="profileImg">
+                        </div>
+                        <div class="col m7">
+                            <h1 class="mainText">Who Am I?</h1>
+                            <p class="mainText">My name is Nathaniel (Nathan) Geckle. I'm 21 years old. I have worked for 2 years in the food business, but I'm now looking for a job in Web Development. I am currently a student of the University of Richmond Coding Bootcamp. I have learned HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node.js, MySQL, MongoDB, Express.js, Handlebars.js, and React.js with in the span of 6 months. It's been a grueling process, but I am very proud of myself for making it this far.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="./assets/images/code.png"></div>
+            </div>
+            <div class="section black" id="gallery">
+                <br>
+                <div class="container center">
+                    <h1 class="mainText">Projects</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col m3">
+                            <a href="https://ngeckle.github.io/R6Random/"><img src="./assets/images/r6.jpg" class="gallery hoverImg"></a>
+                        </div>
+                        <div class="col m3">
+                            <a href="https://ngeckle.github.io/TriviaGame/"><img src="./assets/images/cat.jpg" class="gallery hoverImg"></a>
+                        </div>
+                        <div class="col m3">
+                            <a href="https://ngeckle.github.io/GifTastic/"><img src="./assets/images/gif.gif" class="gallery hoverImg"></a>
+                        </div>
+                        <div class="col m3">
+                            <a href="https://ngeckle.github.io/MarvelClickyGame/"><img src="./assets/images/marvel.png" class="gallery hoverImg"></a>
+                        </div>    
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col m3">
+                            <a href="https://hidden-brushlands-75094.herokuapp.com/"><img src="./assets/images/burger.gif" class="gallery hoverImg"></a>
+                        </div>
+                        <div class="col m3">
+                            <a href="https://secure-tor-11865.herokuapp.com/"><img src="./assets/images/m0t1v8r.png" class="gallery hoverImg"></a>
+                        </div>
+                        <div class="col m3">
+                            <a href="https://iflsscraper.herokuapp.com/"><img src="./assets/images/iflscienceLogo.png" class="gallery hoverImg"></a>
+                        </div>
+                        <div class="col m3">
+                            <a href="https://trailerparkagain.herokuapp.com"><img src="./assets/images/trailerPark.jpg" class="gallery hoverImg"></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="./assets/images/code2.png"></div>
+            </div>
+            <div class="section black">
+                <br>
+                <div class="container">
+                    <h1 class="mainText center">A Little More About Myself</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col m6">
+                            <p class="mainText">I graduated high school in 2015 with an advanced diploma.</p>
+                            <br>
+                            <p class="mainText">Some of my leadership skills come from being a Section Leader in marching band, the President of Game Club at school, and being a Shift Leader at Jersey Mike's for a little more than 2 years.</p>
+                            
+                        </div>
+                        <div class="col m6">
+                            <p class="mainText">I have a huge passion for music, and my passion for coding developed from a Web Master class I took in high school.</p>
+                            <br>
+                            <p class="mainText">I plan on going back to school to get a Bachelor's Degree within the next 5-10 years.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section black" id="contact">
+                <br>
+                <div class="container center">
+                    <h1 class="mainText center">Where To Find Me</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col m4">
+                            <a href=""><img src="./assets/images/github.png" class="contactImg hoverImg"></a>
+                        </div>
+                        <div class="col m4">
+                            <a href=""><img src="./assets/images/linkedin.png" class="contactImg hoverImg"></a>
+                        </div>
+                        <div class="col m4">
+                            <a href=""><img src="./assets/images/stack.png" class="contactImg hoverImg"></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br>
+        <footer>
+            &copy; Copyright 2018 Nathaniel Geckle
+        </footer>
+        <script type="text/Javascript">
+            $('a[href*="#"]')
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            event.preventDefault();
+                            $('html, body').animate({scrollTop: target.offset().top}, 1000, function() {
+                                var $target = $(target);
+                                if ($target.is(":focus")) {
+                                    return false;
+                                } 
+                                else {
+                                    $target.attr('tabindex','-1');
+                                };
+                            });
+                        }
+                    }
+                });
+            
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("topButton").style.display = "block";
+                } 
+                else {
+                    document.getElementById("topButton").style.display = "none";
+                }
+            }
+        </script>
+        <script src="./assets/javascript/page.js"></script>
     </body>
 </html>
